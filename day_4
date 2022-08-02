@@ -1,0 +1,103 @@
+// 2.Display the all country flags in console.
+
+let request = new XMLHttpRequest();
+
+request.open("GET", "https://restcountries.com/v2/all");
+request.onload = () => {
+    console.log(request.status);
+    console.log(request.statusText);
+    let result = JSON.parse(request.response);
+
+    for (let i = 0; i < result.length; i++){
+        console.log(result[i].flags.png)
+    }
+};
+
+
+    
+    request.send();
+
+
+ 
+// 3.Display the all countryname in console.
+ 
+    let request = new XMLHttpRequest();
+    
+    request.open("GET", "https://restcountries.com/v2/all");
+    request.onload = () => {
+        console.log(request.status);
+        console.log(request.statusText);
+        let result = JSON.parse(request.response);
+    
+        for (let i = 0; i < result.length; i++){
+            console.log(result[i].name)
+        }
+    };
+    
+    
+        
+        request.send();
+       
+
+
+ 
+// 3.Display the all country region in console.
+
+let request = new XMLHttpRequest();
+
+request.open("GET", "https://restcountries.com/v2/all");
+request.onload = () => {
+    console.log(request.status);
+    console.log(request.statusText);
+    let result = JSON.parse(request.response);
+
+    for (let i = 0; i < result.length; i++){
+        console.log(result[i].region)
+    }
+};
+
+
+    
+    request.send();
+
+    
+
+    // 3.Display the all country subregion in console.
+
+    let request = new XMLHttpRequest();
+    
+    request.open("GET", "https://restcountries.com/v2/all");
+    request.onload = () => {
+        console.log(request.status);
+        console.log(request.statusText);
+        let result = JSON.parse(request.response);
+    
+        for (let i = 0; i < result.length; i++){
+            console.log(result[i].subregion)
+        }
+    };
+    
+    
+        
+        request.send();
+    
+
+
+// 3.Display the all country population in console.
+
+let request = new XMLHttpRequest();
+
+request.open("GET", "https://restcountries.com/v2/all");
+request.onload = () => {
+    console.log(request.status);
+    console.log(request.statusText);
+    let result = JSON.parse(request.response);
+
+    for (let i = 0; i < result.length; i++){
+        console.log(result[i].population)
+    }
+};
+
+
+    
+    request.send();
